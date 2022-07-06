@@ -1,0 +1,24 @@
+h1 {
+    color: blue;
+    text-decoration: underline;
+}
+.wrap {
+    /* wrap을 안해주고 div로 해주면 .todo_List를 설정해도 todo_List가 div에 속해있기 때문에
+        설정이 먼저 들어감*/
+    display: flex;
+}
+.todo_List{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2em;
+    margin: 1em;
+    /* padding, margin은 칸마다 빈칸을 만들어줄때 어느정도인지 지정할때 사용한다. */
+    /*display: flex;*/
+    flex: 1 1 0;
+}
+button {
+    width: calc(20% - 20px);
+}
+button:hover { /* hover는 버튼의 효과를 줄때 사용함 */
+    background-color: orange;
+}

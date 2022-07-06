@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>오늘의 하루</title>
+    <link rel="stylesheet" href="./1-6%20자바스크립트%20기초(1).css">
+    <!-- <script src="./1-6%20자바스크립트%20기초(1).js"></script> -->
+    <!-- ↑↑ 여기에 넣어주면 body가 만들어지기 전에 head의 요소들이 들어간다고 진행되서
+         컴퓨터가 인식 못함 그래서 body안에 script를 넣어준다. -->
+</head>
+<body>
+    <h1 id="title">오늘 할 일</h1>
+    <div class="wrap">
+        <div class="todo_List"> <!-- div 안에 포함되어 있는 것을 Tree관계라고 한다. -->
+            <h3>고양이 밥주기</h3>
+            <p>고양이 물, 사료 챙겨주기</p>
+            <!-- <input type="button"> --> <!-- 이렇게도 생성 가능 -->
+            <button onclick="changeBackgroundColor(0)">완료</button>
+        </div>
+
+        <div class="todo_List">
+            <h3>장보기</h3>
+            <p>토마토, 계란, 초콜릿 사기</p>
+            <button>완료</button>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="todo_List">
+            <h3>코딩하기</h3>
+            <p>리액트 강의 1주차 듣기</p>
+            <button>완료</button>
+        </div>
+        <div class="todo_List">
+            <h3>코딩하기</h3>
+            <p>리액트 강의 1주차 듣기</p>
+            <button>완료</button>
+        </div>
+    </div>
+
+    <!--title에 색상을 주기 위해서는 여기에 script를 써줘야한다. -->
+
+    <script src="./1-6%20자바스크립트%20기초(1).js"></script>
+</body>
+</html>
